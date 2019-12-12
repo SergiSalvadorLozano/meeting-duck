@@ -10,7 +10,7 @@
       </ion-button>
     </div>
   </ion-card-header>
-  <ion-card-content *ngIf="expanded">
+  <ion-card-content [@collapsible]="expanded ? 'expanded' : 'collapsed'">
     <p *ngFor="let paragraph of content" translate>{{ paragraph }}</p>
   </ion-card-content>
 </ion-card>

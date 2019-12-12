@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Store, select } from '@ngrx/store';
-import { Observable, Subscription, timer } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { isNil, forEach } from 'lodash';
-import * as LanguageActions from '../../../../shared/actions/language.actions';
 import * as HelpCardComponentActions from './help-card.actions';
 
 
@@ -10,6 +10,13 @@ import * as HelpCardComponentActions from './help-card.actions';
   selector: 'mduck-help-card',
   templateUrl: './help-card.component.html',
   styleUrls: ['./help-card.component.scss'],
+  animations: [
+    trigger('collapsible', [
+      state('expanded', style({ height: '*', paddingTop: '*', paddingBottom: '*' })),
+      state('collapsed', style({ height: '0', paddingTop: '0', paddingBottom: '0' })),
+      transition('expanded <=> collapsed', animate(100))
+    ])
+  ]
 })
 export class HelpCardComponent implements OnInit, OnDestroy {
 
