@@ -1,0 +1,19 @@
+.help-card {
+  display: flex;
+  flex-direction: column;
+
+  ion-card-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  ion-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+
+  ion-button {
+    height: 1.5rem;
+  }
+}

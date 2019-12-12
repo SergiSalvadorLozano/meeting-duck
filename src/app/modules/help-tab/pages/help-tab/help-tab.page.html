@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> {{ '$help-tab.help-tab-title' | translate }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="help-tab-content">
+    <ion-card>
+      <ion-card-content class="language-card-content">
+        <span class="language-label" translate>$general.language</span>
+        <ion-chip class="language-chip" color="primary" (click)="chooseLanguage($event)">
+          <ion-label translate> {{ currentLanguageName }} </ion-label>
+        </ion-chip>
+      </ion-card-content>
+    </ion-card>
+  <mduck-help-card *ngFor="let card of helpCardList; let i = index" [index]="i" [heading]="card.heading"
+    [content]="card.paragraphs"></mduck-help-card>
+</ion-content>

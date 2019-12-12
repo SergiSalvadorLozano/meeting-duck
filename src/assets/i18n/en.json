@@ -1,0 +1,53 @@
+{
+  
+  "$general": {
+    "language": "Language",
+    "$languages": {
+      "english": "English",
+      "spanish": "Spanish"
+    }
+  },
+
+  "$help-tab": {
+    "help-tab-title": "Help",
+
+    "$cards": {
+      "join-a-room-heading": "Join a room",
+      "join-a-room-paragraph-1": "Paragraph 1",
+      "join-a-room-paragraph-2": "Paragraph 2",
+      "join-a-room-paragraph-3": "Paragraph 3",
+      "own-the-duck-heading": "Own the duck",
+      "own-the-duck-paragraph-1": "Paragraph 1",
+      "own-the-duck-paragraph-2": "Paragraph 2",
+      "own-the-duck-paragraph-3": "Paragraph 3",
+      "pass-the-duck-heading": "Pass the duck",
+      "pass-the-duck-paragraph-1": "Paragraph 1",
+      "pass-the-duck-paragraph-2": "Paragraph 2",
+      "pass-the-duck-paragraph-3": "Paragraph 3",
+      "request-the-duck-heading": "Request the duck",
+      "request-the-duck-paragraph-1": "Paragraph 1",
+      "request-the-duck-paragraph-2": "Paragraph 2",
+      "request-the-duck-paragraph-3": "Paragraph 3",
+      "strike-heading": "Strike the heretic",
+      "strike-paragraph-1": "Paragraph 1",
+      "strike-paragraph-2": "Paragraph 2",
+      "strike-paragraph-3": "Paragraph 3",
+      "what-is-heading": "What is Meeting Duck?",
+      "what-is-paragraph-1": "Paragraph 1",
+      "what-is-paragraph-2": "Paragraph 2",
+      "what-is-paragraph-3": "Paragraph 3"
+    }
+  },
+
+  "$owner-tab": {
+    "owner-tab-title": "Owner"
+  },
+
+  "$peers-tab": {
+    "peers-tab-title": "Peers"
+  },
+
+  "$rooms-tab": {
+    "rooms-tab-title": "Rooms"
+  }
+}

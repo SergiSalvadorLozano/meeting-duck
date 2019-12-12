@@ -1,0 +1,16 @@
+<ion-card class="help-card">
+  <ion-card-header>
+    <ion-card-title translate>{{ heading }}</ion-card-title>
+    <div class="icon-container">
+      <ion-button *ngIf="!expanded" (click)="expandCard()" fill="clear">
+        <ion-icon slot="icon-only" name="arrow-dropdown"></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="expanded" (click)="contractCard()" fill="clear">
+        <ion-icon slot="icon-only" name="arrow-dropup"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-card-header>
+  <ion-card-content *ngIf="expanded">
+    <p *ngFor="let paragraph of content" translate>{{ paragraph }}</p>
+  </ion-card-content>
+</ion-card>

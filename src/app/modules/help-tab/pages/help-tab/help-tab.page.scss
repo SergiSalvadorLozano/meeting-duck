@@ -1,0 +1,24 @@
+.help-tab-content {
+  display: flex;
+  flex-direction: column;
+
+  .language-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .language-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .language-chip {
+    ion-label {
+      font-size: 1.1rem;
+      margin: 1rem;
+    }
+  }
+
+}

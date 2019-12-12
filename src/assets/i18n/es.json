@@ -1,0 +1,53 @@
+{
+
+  "$general": {
+    "language": "Idioma",
+    "$languages": {
+      "english": "Inglés",
+      "spanish": "Español"
+    }
+  },
+
+  "$help-tab": {
+    "help-tab-title": "Ayuda",
+
+    "$cards": {
+      "join-a-room-heading": "Únete a una sala",
+      "join-a-room-paragraph-1": "Párrafo 1",
+      "join-a-room-paragraph-2": "Párrafo 2",
+      "join-a-room-paragraph-3": "Párrafo 3",
+      "own-the-duck-heading": "Mantén el pato",
+      "own-the-duck-paragraph-1": "Párrafo 1",
+      "own-the-duck-paragraph-2": "Párrafo 2",
+      "own-the-duck-paragraph-3": "Párrafo 3",
+      "pass-the-duck-heading": "Pasa el pato",
+      "pass-the-duck-paragraph-1": "Párrafo 1",
+      "pass-the-duck-paragraph-2": "Párrafo 2",
+      "pass-the-duck-paragraph-3": "Párrafo 3",
+      "request-the-duck-heading": "Pide el pato",
+      "request-the-duck-paragraph-1": "Párrafo 1",
+      "request-the-duck-paragraph-2": "Párrafo 2",
+      "request-the-duck-paragraph-3": "Párrafo 3",
+      "strike-heading": "Castiga al hereje",
+      "strike-paragraph-1": "Párrafo 1",
+      "strike-paragraph-2": "Párrafo 2",
+      "strike-paragraph-3": "Párrafo 3",
+      "what-is-heading": "¿Qué es Meeting Duck?",
+      "what-is-paragraph-1": "Párrafo 1",
+      "what-is-paragraph-2": "Párrafo 2",
+      "what-is-paragraph-3": "Párrafo 3"
+    }
+  },
+
+  "$owner-tab": {
+    "owner-tab-title": "Dueño"
+  },
+
+  "$peers-tab": {
+    "peers-tab-title": "Pares"
+  },
+
+  "$rooms-tab": {
+    "rooms-tab-title": "Salas"
+  }
+}

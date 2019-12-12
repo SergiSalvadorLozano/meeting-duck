@@ -1,0 +1,7 @@
+<ion-list class="choose-language-popover">
+  <ion-list-header translate>$general.language</ion-list-header>
+  <ion-item button *ngFor="let language of languages" [ngClass]="{ selected: language.code === currentLanguageCode }"
+    (click)="setLanguage(language.code)" translate>
+    {{ language.name }}
+  </ion-item>
+</ion-list>
