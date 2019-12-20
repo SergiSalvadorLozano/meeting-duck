@@ -9,7 +9,7 @@ import { IReducerGroup } from '../models/reducer-group.interface';
 export const initialState = null;
 
 
-const CurrentLanguageReducer = createReducer(
+const currentLanguageReducer = createReducer(
   initialState,
 
   /**
@@ -21,5 +21,5 @@ const CurrentLanguageReducer = createReducer(
 
 
 export const languageReducers: IReducerGroup = {
-  currentLanguage: CurrentLanguageReducer
+  currentLanguage: currentLanguageReducer
 };

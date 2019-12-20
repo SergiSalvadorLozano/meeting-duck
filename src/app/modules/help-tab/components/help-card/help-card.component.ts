@@ -99,8 +99,8 @@ export class HelpCardComponent implements OnInit, OnDestroy {
   /**
    * Contract the current help card.
    */
-  contractCard(): void {
-    this.store.dispatch(HelpCardComponentActions.cardContracted());
+  collapseCard(): void {
+    this.store.dispatch(HelpCardComponentActions.cardCollapsed());
   }
 
 }

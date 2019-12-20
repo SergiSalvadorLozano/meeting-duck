@@ -1,4 +1,4 @@
-import { ActionReducer, Action, State } from '@ngrx/store';
+import { ActionReducer, Action } from '@ngrx/store';
 
 
 export interface IReducerGroup {

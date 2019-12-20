@@ -1,5 +1,4 @@
-import { concat } from 'lodash';
-import { SharedEffects } from './shared/shared.effects';
+import { sharedEffects } from './shared/shared.effects';
 
 
-export const AppEffects = concat(SharedEffects);
+export const appEffects = [...sharedEffects];

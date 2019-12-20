@@ -6,4 +6,6 @@ export const cardExpanded = createAction(
   props<{ index: number }>()
 );
 
-export const cardContracted = createAction('[Help Card Component] Contracted');
+export const cardCollapsed = createAction(
+  '[Help Card Component] Collapsed'
+);

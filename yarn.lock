@@ -385,6 +385,11 @@
   resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-8.5.2.tgz#c4f81947f4028a0d678ed2641101481cdbe11b59"
   integrity sha512-i2rKLmFcfJmPPQRul1PuXXRuBX2q1g7tK6DbWreNabU/46fYlEwqiiW6lU53t3AgJ3yd6UpeLTR6CHTflkzL+w==
 
+"@ngrx/store@^4.0.0":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-4.1.1.tgz#680e34df2775e8852754ed777ffac95bd81b7de0"
+  integrity sha1-aA403yd16IUnVO13f/rJW9gbfeA=
+
 "@ngrx/store@^8.5.2":
   version "8.5.2"
   resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-8.5.2.tgz#18e4a39f3e7ac2ec8307653837ec3c4153bde04f"
@@ -4626,6 +4631,13 @@ neo-async@^2.5.0, neo-async@^2.6.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
+
+ngrx-batch-action-reducer@^0.0.9-rc.1:
+  version "0.0.9-rc.1"
+  resolved "https://registry.yarnpkg.com/ngrx-batch-action-reducer/-/ngrx-batch-action-reducer-0.0.9-rc.1.tgz#e7021af564e8198448ce23aaf6852193d22873a7"
+  integrity sha512-0O4+0O29b/NDVEp7M1QuSzujBAznIrGQ8ZTed+kZAhuetlJUd6HVoGzbvq2OXzbYSPcPD2YVjvB6jMM1UNhXTA==
+  dependencies:
+    "@ngrx/store" "^4.0.0"
 
 nice-try@^1.0.4:
   version "1.0.5"

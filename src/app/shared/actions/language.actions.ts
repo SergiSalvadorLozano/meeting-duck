@@ -1,11 +1,19 @@
 import { createAction, props } from '@ngrx/store';
+import { IAppError } from '../models/error.interface';
 
 
-export const languageInitStarted = createAction('[Language] Init - Started');
+export const languageInitStarted = createAction(
+  '[Language] Init - Started'
+);
 
-export const languageInitCompleted = createAction('[Language] Init - Completed');
+export const languageInitCompleted = createAction(
+  '[Language] Init - Completed'
+);
 
-export const languageInitError = createAction('[Language] Init - Error');
+export const languageInitError = createAction(
+  '[Language] Init - Error',
+  props<{ error: IAppError }>()
+);
 
 export const languageSetStarted = createAction(
   '[Language] Set - Started',
@@ -17,4 +25,7 @@ export const languageSetCompleted = createAction(
   props<{ languageCode: string }>()
 );
 
-export const languageSetError = createAction('[Language] Set - Error');
+export const languageSetError = createAction(
+  '[Language] Set - Error',
+  props<{ error: IAppError }>()
+);

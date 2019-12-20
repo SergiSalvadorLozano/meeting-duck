@@ -6,18 +6,17 @@ import { find } from 'lodash';
 import * as moment from 'moment';
 import 'moment/locale/es';
 import { Observable, from as rxFrom, throwError as rxThrowError } from 'rxjs';
+import { map as rxMap } from 'rxjs/operators';
 import * as LanguageActions from '../actions/language.actions';
 import { DEFAULT_LANGUAGE_CODE, LANGUAGES } from '../constants/language.constants';
 import { LANGUAGE_STORAGE_KEY } from '../constants/storage.constants';
-
+import { APP_ERRORS } from '../constants/error.constants';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class LanguageService {
-
-  // METHODS
 
   /**
    * Service constructor.
@@ -29,6 +28,8 @@ export class LanguageService {
   ) { }
 
 
+  // NON-API METHODS
+
   /**
    * Sets the default application language.
    * Dispatches an action to set the current language to the last one, or to the browser language if there isn't any.
@@ -36,10 +37,12 @@ export class LanguageService {
    */
   setInitialAppLanguange(): Observable<void> {
     this.translate.setDefaultLang(DEFAULT_LANGUAGE_CODE);
-    return rxFrom(this.storage.get(LANGUAGE_STORAGE_KEY).then(storageLanguageCode => {
-      const languageCode = storageLanguageCode || this.translate.getBrowserLang();
-      this.store.dispatch(LanguageActions.languageSetStarted({ languageCode }));
-    }));
+    return rxFrom(this.storage.get(LANGUAGE_STORAGE_KEY)).pipe(
+      rxMap(storageLanguageCode => {
+        const languageCode = storageLanguageCode || this.translate.getBrowserLang();
+        this.store.dispatch(LanguageActions.languageSetStarted({ languageCode }));
+      })
+    );
   }
 
 
@@ -53,7 +56,7 @@ export class LanguageService {
       this.translate.use(languageCode);
       return rxFrom(this.storage.set(LANGUAGE_STORAGE_KEY, languageCode));
     } else {
-      return rxThrowError('Error: Language not available');
+      return rxThrowError(APP_ERRORS.language.unavailable);
     }
   }
 }

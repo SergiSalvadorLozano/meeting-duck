@@ -1,5 +1,4 @@
-{
-  
+{  
   "$general": {
     "language": "Language",
     "$languages": {
@@ -49,5 +48,22 @@
 
   "$rooms-tab": {
     "rooms-tab-title": "Rooms"
+  },
+
+  "$error": {
+    "$general": {
+      "generic": "An error occurred and the operation could not be completed"
+    },
+
+    "$room": {
+      "room-full": "This room is already full",
+      "user-already-in-room": "You must leave your current room first",
+      "user-not-in-room": "You must join a room first"
+    },
+
+    "$user": {
+      "invalid-user-name": "This user name is invalid",
+      "user-name-exists": "This user name already exists in this room"
+    }
   }
 }

@@ -14,12 +14,13 @@ import { StoreModule } from '@ngrx/store';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { enableBatchReducer } from 'ngrx-batch-action-reducer';
 
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
-import { AppEffects } from './app.effects';
-import { appReducers } from './app.reducer';
+import { appEffects } from './app.effects';
+import { appReducers } from './app.reducers';
 import { AppRoutingModule } from './app-routing.module';
 
 
@@ -30,12 +31,12 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
-    EffectsModule.forRoot(AppEffects),
+    EffectsModule.forRoot(appEffects),
     HttpClientModule,
     IonicModule.forRoot(),
     IonicStorageModule.forRoot(),
     SharedModule.forRoot(),
-    StoreModule.forRoot(appReducers),
+    StoreModule.forRoot(appReducers, { metaReducers: [enableBatchReducer] }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
