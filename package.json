@@ -30,7 +30,7 @@
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "core-js": "^2.5.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "ngrx-batch-action-reducer": "^0.0.9-rc.1",
     "rxjs": "~6.5.1",
